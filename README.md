@@ -1,7 +1,3 @@
-Sure! Here’s a sample `README.md` for the project you provided:
-
----
-
 # URL Shortener - Go, Fiber, Redis
 
 A simple URL shortener built with **Go**, **Fiber**, and **Redis** for fast and efficient URL shortening. This project provides a RESTful API to shorten URLs and retrieve the original URL using the shortened link.
@@ -90,15 +86,15 @@ This URL shortener allows users to shorten long URLs, store them in Redis, and r
 
 | Method | Endpoint           | Description                            |
 |--------|--------------------|----------------------------------------|
-| POST   | `/api/shorten`      | Shorten a long URL                    |
-| GET    | `/api/:shortened`   | Redirect to the original URL          |
+| POST   | `/api/v1`      | Shorten a long URL                    |
+| GET    | `/:url`   | Redirect to the original URL          |
 
 ---
 
 ## Usage
 
 1. **Shorten a URL**:
-   - Send a POST request to `/api/shorten` with a JSON payload containing the long URL.
+   - Send a POST request to `/api/v1` with a JSON payload containing the long URL.
    Example:
    ```json
    {
@@ -130,13 +126,3 @@ Contributions are welcome! Feel free to fork the repository and submit pull requ
    git push origin feature-name
    ```
 5. Submit a pull request.
-
----
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Let me know if you need further adjustments!
